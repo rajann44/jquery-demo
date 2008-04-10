@@ -1,6 +1,6 @@
 # jQuery 1.2.6 Framework
 
-This is a basic implementation of jQuery version 1.2.6, which was a significant release in the jQuery timeline. This version introduced several important features and improvements.
+jQuery 1.2.6 is the latest release of the popular JavaScript library that makes it easy to add dynamic behavior to your web pages.
 
 ## Features
 
@@ -14,7 +14,7 @@ This is a basic implementation of jQuery version 1.2.6, which was a significant 
 
 ## Setup
 
-1. Clone this repository
+1. Download the jQuery file
 2. Open `test.html` in your browser to see jQuery in action
 
 ## Usage
