@@ -1,0 +1,20 @@
+{
+  "name": "jquery-1.2.6-framework",
+  "version": "1.2.6",
+  "description": "jQuery 1.2.6 Framework Implementation",
+  "main": "jquery-1.2.6.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jquery",
+    "javascript",
+    "framework"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+} 

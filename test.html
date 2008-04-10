@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 1.2.6 Test</title>
+    <script src="jquery-1.2.6.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            margin: 10px;
+            display: inline-block;
+        }
+        .highlight {
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery 1.2.6 Test Page</h1>
+    
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <button id="animateBtn">Animate</button>
+    <button id="toggleBtn">Toggle Class</button>
+    <button id="ajaxBtn">Test AJAX</button>
+
+    <div id="result"></div>
+
+    <script>
+        $(document).ready(function() {
+            // Basic selector and event handling
+            $('.box').click(function() {
+                $(this).fadeOut(500).fadeIn(500);
+            });
+
+            // Animation demo
+            $('#animateBtn').click(function() {
+                $('.box').animate({
+                    width: '200px',
+                    height: '200px'
+                }, 1000).animate({
+                    width: '100px',
+                    height: '100px'
+                }, 1000);
+            });
+
+            // Class manipulation
+            $('#toggleBtn').click(function() {
+                $('.box').toggleClass('highlight');
+            });
+
+            // AJAX demo
+            $('#ajaxBtn').click(function() {
+                $.ajax({
+                    url: 'https://jsonplaceholder.typicode.com/posts/1',
+                    method: 'GET',
+                    success: function(data) {
+                        $('#result').html('<pre>' + JSON.stringify(data, null, 2) + '</pre>');
+                    },
+                    error: function() {
+                        $('#result').html('Error loading data');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
