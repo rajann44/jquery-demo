@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery 1.2.6 Test</title>
     <script src="jquery-1.2.6.js"></script>
-    <style>
+    <style type="text/css">
         .box {
             width: 100px;
             height: 100px;
@@ -27,13 +26,13 @@
         <div class="box"></div>
     </div>
 
-    <button id="animateBtn">Animate</button>
-    <button id="toggleBtn">Toggle Class</button>
-    <button id="ajaxBtn">Test AJAX</button>
+    <input type="button" id="animateBtn" value="Animate">
+    <input type="button" id="toggleBtn" value="Toggle Class">
+    <input type="button" id="ajaxBtn" value="Test AJAX">
 
     <div id="result"></div>
 
-    <script>
+    <script type="text/javascript">
         $(document).ready(function() {
             // Basic selector and event handling
             $('.box').click(function() {
@@ -59,10 +58,10 @@
             // AJAX demo
             $('#ajaxBtn').click(function() {
                 $.ajax({
-                    url: 'https://jsonplaceholder.typicode.com/posts/1',
+                    url: 'test.xml',
                     method: 'GET',
                     success: function(data) {
-                        $('#result').html('<pre>' + JSON.stringify(data, null, 2) + '</pre>');
+                        $('#result').html('<pre>' + data + '</pre>');
                     },
                     error: function() {
                         $('#result').html('Error loading data');

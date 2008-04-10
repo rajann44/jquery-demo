@@ -15,11 +15,7 @@ This is a basic implementation of jQuery version 1.2.6, which was a significant 
 ## Setup
 
 1. Clone this repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Open `test.html` in your browser to see jQuery in action
+2. Open `test.html` in your browser to see jQuery in action
 
 ## Usage
 
@@ -39,6 +35,13 @@ $(document).ready(function() {
 ## Testing
 
 Open `test.html` in your browser to see a demonstration of jQuery's core features.
+
+## Browser Support
+
+- Internet Explorer 6+
+- Firefox 2+
+- Safari 3+
+- Opera 9+
 
 ## License
 
